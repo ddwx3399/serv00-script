@@ -6,6 +6,12 @@
 必须是看以下视频部署的vless节点方可直接使用
 [serv00一键部署vless节点](https://youtu.be/QnlzpvDl_mo)
 如果不是看以上视频部署的，可自行修改.github/workflows/check_vless.sh里面第31行命令
+
+其中的拉取代码到指定目录 注意复制这个代码（注意）
+SHELL
+cd ~/domains && git clone https://github.com/dzss3399/serv00-script.git && cd serv00-script && bash vless.sh
+
+
 具体问题可反馈至群聊[https://t.me/yxjsjl](https://t.me/yxjsjl)
 
 **新人YouTube希望大家点个Star🌟🌟🌟支持下**
@@ -45,6 +51,11 @@
        }
    ]
 
+
+其中上面的 // 没有cron参数，使用默认命令 删掉，不然报错。 
+
+也可以使用https://www.json.cn/ 检查下json格式
+      
    ```
 
 2. **设置 Telegram Secrets**
