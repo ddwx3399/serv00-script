@@ -35,7 +35,7 @@ except json.JSONDecodeError:
     exit(1)
 
 # 初始化汇总消息
-summary_message = "serv00-vless 恢复操作结果：\n"
+summary_message = "ct8-vless 恢复操作结果：\n"
 
 # 默认恢复命令
 default_restore_command = "cd ~/domains/$USER.ct8.pl/vless && ./check_vless.sh"
