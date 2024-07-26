@@ -53,7 +53,7 @@ generate_uuid() {
 # Function to save config.json
 save_config() {
     local port=$1
-    if [[ ! -f ~/domains/$USER.serv00.net/vless/config.json ]]; then
+    if [[ ! -f ~/domains/$USER.ct8.pl/vless/config.json ]]; then
         uuid=$(generate_uuid)
         cat <<EOL > ~/domains/$USER.ct8.pl/vless/config.json
 {
