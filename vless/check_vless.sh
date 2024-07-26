@@ -86,7 +86,7 @@ deploy_vless() {
     echo -e "UUID: ${GREEN}${uuid}${NC}"
     echo -e "域名: ${GREEN}$USER.serv00.net${NC}"
     echo -e "vless进程维护定时任务脚本: ${GREEN}cd ~/domains/$USER.ct8.pl/vless && ./check_vless.sh${NC}"
-    echo -e "VLESS节点信息: ${GREEN}vless://${uuid}@$USER.ct8.pl:${port}?flow=&security=none&encryption=none&type=ws&host=$USER.ct8.pl&path=/&sni=&fp=&pbk=&sid=#$USER.serv00.vless${NC}"
+    echo -e "VLESS节点信息: ${GREEN}vless://${uuid}@$USER.ct8.pl:${port}?flow=&security=none&encryption=none&type=ws&host=$USER.ct8.pl&path=/&sni=&fp=&pbk=&sid=#$USER.ct8.vless${NC}"
 }
 
 # 启动pm2 vless进程
@@ -158,8 +158,8 @@ main() {
             port=$(jq -r '.port' config.json)
             echo -e "UUID: ${uuid}"
             echo -e "Port: ${port}"
-            echo -e "域名: $USER.serv00.net"
-            echo -e "VLESS节点信息: vless://${uuid}@$USER.ct8.pl:${port}?flow=&security=none&encryption=none&type=ws&host=$USER.ct8.pl&path=/&sni=&fp=&pbk=&sid=#$USER.serv00.vless"
+            echo -e "域名: $USER.ct8.pl"
+            echo -e "VLESS节点信息: vless://${uuid}@$USER.ct8.pl:${port}?flow=&security=none&encryption=none&type=ws&host=$USER.ct8.pl&path=/&sni=&fp=&pbk=&sid=#$USER.ct8.vless"
 
         else
             echo -e "config.json 文件不存在或格式错误。"
