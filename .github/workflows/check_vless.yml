@@ -1,8 +1,8 @@
 name: 恢复vless服务并发送Telegram消息
 
 on: workflow_dispatch
-  schedule:
-   cron: "0 0 */15 * *"  # 每三天运行一次，可以根据需求调整时间
+  #schedule:
+   #cron: "0 0 */15 * *"  # 每三天运行一次，可以根据需求调整时间
 
 
 jobs:
